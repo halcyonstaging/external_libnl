@@ -6,6 +6,10 @@
 #ifndef __NL_SHARED_CORE_NL_CORE_H__
 #define __NL_SHARED_CORE_NL_CORE_H__
 
+#ifndef in_addr_t
+typedef uint32_t in_addr_t;
+#endif
+
 #define NL_SOCK_PASSCRED (1 << 1)
 #define NL_OWN_PORT (1 << 2)
 #define NL_MSG_PEEK (1 << 3)
